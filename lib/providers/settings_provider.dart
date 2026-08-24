@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:ui' show PlatformDispatcher;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -87,6 +88,7 @@ class SettingsProvider extends ChangeNotifier {
 
   // ── In-app purchase setup ─────────────────────────────
   void _initPurchases() {
+    if (kIsWeb) return;
     _purchaseSub?.cancel();
     _purchaseSub = InAppPurchase.instance.purchaseStream.listen(
       _handlePurchaseUpdate,

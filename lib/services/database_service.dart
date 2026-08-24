@@ -1,7 +1,9 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import '../models/models.dart';
 
 class DatabaseService {
@@ -13,6 +15,18 @@ class DatabaseService {
   }
 
   static Future<Database> _open() async {
+    if (kIsWeb) {
+      databaseFactory = databaseFactoryFfiWeb;
+      return databaseFactory.openDatabase(
+        'gastos_viaje.db',
+        options: OpenDatabaseOptions(
+          version: 2,
+          onConfigure: (db) => db.execute('PRAGMA foreign_keys = ON'),
+          onCreate: _onCreate,
+          onUpgrade: _onUpgrade,
+        ),
+      );
+    }
     final dir = await getDatabasesPath();
     final path = p.join(dir, 'gastos_viaje.db');
     return openDatabase(
