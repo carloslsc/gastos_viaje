@@ -27,7 +27,7 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter build web --release --base-href /Nivela/
+      - run: flutter build web --release --base-href /gastos_viaje/
 
       - uses: actions/upload-pages-artifact@v3
         with:
