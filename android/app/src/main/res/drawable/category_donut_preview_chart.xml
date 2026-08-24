@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Donut chart preview for the category widget picker.
+  4 segments — Comida 33% (orange), Vuelo 29% (cyan), Hospedaje 20% (blue), Transporte 18% (teal).
+  ViewBox 100×100, center (50,50), arc radius 38, strokeWidth 16, gap ~4°.
+
+  Segment angles (clockwise, origin at top = -90°):
+    Comida     → -90° … 24.8°   (114.8°, large-arc=0)
+    gap 4°
+    Vuelo      → 28.8° … 129.2° (100.4°, large-arc=0)
+    gap 4°
+    Hospedaje  → 133.2° … 201.2° (68°, large-arc=0)
+    gap 4°
+    Transporte → 205.2° … 266°  (60.8°, large-arc=0)
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background track -->
+    <path
+        android:pathData="M50,12 A38,38,0,0,1,50,88 A38,38,0,0,1,50,12"
+        android:strokeColor="#28FFFFFF"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Comida · Orange #C8592A · -90° → 24.8° -->
+    <path
+        android:pathData="M50,12 A38,38,0,0,1,84.5,65.9"
+        android:strokeColor="#C8592A"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Vuelo · Cyan #5AC4D4 · 28.8° → 129.2° -->
+    <path
+        android:pathData="M83.3,68.4 A38,38,0,0,1,26.0,79.5"
+        android:strokeColor="#5AC4D4"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Hospedaje · Blue #4FA3D4 · 133.2° → 201.2° -->
+    <path
+        android:pathData="M24.1,77.8 A38,38,0,0,1,14.5,36.3"
+        android:strokeColor="#4FA3D4"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Transporte · Teal #4CBFBF · 205.2° → 266° -->
+    <path
+        android:pathData="M15.6,33.8 A38,38,0,0,1,47.4,12.1"
+        android:strokeColor="#4CBFBF"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+</vector>

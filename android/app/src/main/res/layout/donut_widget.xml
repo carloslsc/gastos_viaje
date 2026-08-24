@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/donut_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0151519">
+
+    <!-- Fluent accent bar -->
+    <FrameLayout
+        android:id="@+id/donut_accent_bar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFC8592A" />
+
+    <!-- Main content row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical">
+
+        <!-- Donut chart bitmap (slightly larger for Fluent feel) -->
+        <ImageView
+            android:id="@+id/iv_donut"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY" />
+
+        <!-- Legend panel -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Header: trip name + total -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_donut_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sin viaje activo"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/tv_donut_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFC8592A"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Fluent divider -->
+            <FrameLayout
+                android:id="@+id/donut_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#28FFFFFF" />
+
+            <!-- Legend row 1 -->
+            <LinearLayout
+                android:id="@+id/legend_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/dot_1"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/name_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:textSize="9sp"
+                    android:textColor="#CCFFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/amt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator 1 -->
+            <FrameLayout
+                android:id="@+id/sep_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Legend row 2 -->
+            <LinearLayout
+                android:id="@+id/legend_row_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/dot_2"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/name_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:textSize="9sp"
+                    android:textColor="#CCFFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/amt_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator 2 -->
+            <FrameLayout
+                android:id="@+id/sep_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Legend row 3 -->
+            <LinearLayout
+                android:id="@+id/legend_row_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/dot_3"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/name_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:textSize="9sp"
+                    android:textColor="#CCFFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/amt_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator 3 -->
+            <FrameLayout
+                android:id="@+id/sep_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Legend row 4 -->
+            <LinearLayout
+                android:id="@+id/legend_row_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/dot_4"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/name_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:textSize="9sp"
+                    android:textColor="#CCFFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/amt_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

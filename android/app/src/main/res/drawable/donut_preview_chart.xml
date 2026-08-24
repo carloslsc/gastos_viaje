@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Donut chart preview for the widget picker.
+  3 segments — Sophie (orange 25%), Lucas (blue 40%), Emma (gold 35%).
+  ViewBox 100×100, center (50,50), arc radius 38, strokeWidth 16.
+
+  Arc angles (clockwise, origin at top = -90°):
+    Sophie  → -90° … -3°    (87°)
+    gap 4°
+    Lucas   →   1° … 140°  (139°)
+    gap 4°
+    Emma    → 144° … 266°  (122°)
+    gap 4° back to start
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background track (full circle, two 180° arcs) -->
+    <path
+        android:pathData="M50,12 A38,38,0,0,1,50,88 A38,38,0,0,1,50,12"
+        android:strokeColor="#28FFFFFF"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Sophie · Orange · -90° → -3° (87°) -->
+    <path
+        android:pathData="M50,12 A38,38,0,0,1,87.9,48"
+        android:strokeColor="#C8592A"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Lucas · Blue · 1° → 140° (139°) -->
+    <path
+        android:pathData="M88,50.7 A38,38,0,0,1,20.9,74.4"
+        android:strokeColor="#4FA3D4"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Emma · Gold · 144° → 266° (122°) -->
+    <path
+        android:pathData="M19.3,72.3 A38,38,0,0,1,47.3,12.1"
+        android:strokeColor="#D4A017"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+</vector>

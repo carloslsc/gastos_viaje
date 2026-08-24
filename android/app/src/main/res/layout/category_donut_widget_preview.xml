@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static preview for the category donut widget in the Android widget picker. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2232323">
+
+    <!-- Accent bar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#FFC8592A" />
+
+    <!-- Main content row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:gravity="center_vertical">
+
+        <!-- Donut chart + centre text -->
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/category_donut_preview_chart"
+                android:scaleType="fitXY" />
+
+            <!-- Centre labels -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR"
+                    android:textSize="8sp"
+                    android:textColor="#AAF5F3EF"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="847.50"
+                    android:textSize="13sp"
+                    android:textColor="#FFF5F3EF"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Legend panel -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <!-- Header: trip name + total -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="París 2025"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF5F3EF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR 847.50"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFC8592A"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#28FFFFFF" />
+
+            <!-- Comida · Orange #C8592A -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:text="●"
+                    android:textSize="8sp"
+                    android:textColor="#FFC8592A"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="Comida"
+                    android:textSize="9sp"
+                    android:textColor="#CCF5F3EF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR 310"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF5F3EF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Vuelo · Cyan #5AC4D4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:text="●"
+                    android:textSize="8sp"
+                    android:textColor="#FF5AC4D4"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="Vuelo"
+                    android:textSize="9sp"
+                    android:textColor="#CCF5F3EF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR 280"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF5F3EF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Hospedaje · Blue #4FA3D4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:text="●"
+                    android:textSize="8sp"
+                    android:textColor="#FF4FA3D4"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="Hospedaje"
+                    android:textSize="9sp"
+                    android:textColor="#CCF5F3EF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR 180"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF5F3EF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Separator -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#18FFFFFF" />
+
+            <!-- Transporte · Teal #4CBFBF -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:text="●"
+                    android:textSize="8sp"
+                    android:textColor="#FF4CBFBF"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="Transporte"
+                    android:textSize="9sp"
+                    android:textColor="#CCF5F3EF"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EUR 78"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF5F3EF"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

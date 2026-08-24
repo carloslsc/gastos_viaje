@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebSearch",
+      "Read(//c/Users/Carlos/AppData/Local/Pub/Cache/hosted/pub.dev/**)",
+      "Bash(flutter analyze *)",
+      "Bash(Get-Content \"C:\\\\flutter\\\\packages\\\\flutter_tools\\\\gradle\\\\flutter.gradle\")",
+      "Bash(Select-String -Pattern \"minSdk|targetSdk|compileSdk\")",
+      "Bash(Select-Object -First 15)",
+      "Read(//c/flutter/packages/flutter_tools/gradle/**)",
+      "PowerShell(Select-String -Path \"C:\\\\flutter\\\\packages\\\\flutter_tools\\\\gradle\\\\build.gradle.kts\" -Pattern \"minSdk|targetSdk|compileSdk\" | Select-Object -First 20 | ForEach-Object { \"$\\($_.LineNumber\\): $\\($_.Line\\)\" })",
+      "PowerShell(Get-ChildItem \"C:\\\\flutter\\\\packages\\\\flutter_tools\\\\gradle\\\\\" | ForEach-Object { $name = $_.Name; $content = Get-Content $_.FullName -Raw -ErrorAction SilentlyContinue; if \\($content -match 'minSdk|targetSdk|compileSdk'\\) { Write-Host \"Found in: $name\"; $content | Select-String -Pattern 'minSdk|targetSdk|compileSdk' | ForEach-Object { \"  Line $\\($_.LineNumber\\): $\\($_.Line.Trim\\(\\)\\)\" } } })",
+      "Bash(flutter pub *)"
+    ]
+  }
+}
